@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projek 3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS7bY+qjstpuR7/2yFm/bb6j9I9u6GoHcK7A6Sm7KuF65KGAI9zK" crossorigin="anonymous">
     <style>
-        .custom-widht {
+        .custom-width {
             width: 100%;
             height: 50vh;
             object-fit: cover;
@@ -28,7 +29,7 @@
             height: auto;
         }
 
-        .overlay-buttons {
+        .overlay-buttons-1{
             position: absolute;
             top: 65%;
             left: 50%;
@@ -36,8 +37,18 @@
             display: flex;
             z-index: 1;
         }
-        .btn-custom {
-            background-color: #b119a5;
+
+        .overlay-buttons{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            z-index: 1;
+        }
+
+        .btn-custom-1{
+            background-color: #5cd397;
             color: white;
             border: none;
             padding: 20px;
@@ -48,16 +59,33 @@
             justify-content: center;
             height: 120px;
             width: 150px;
-            
+        }
+        .btn-custom{
+            background-color: #44c988;
+            color: white;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            width: 150px;
+        }
+
+        .btn-custom-1 img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
         }
         .btn-custom img {
             width: 50px;
             height: 50px;
             margin-bottom: 10px;
         }
-        .btn-custom:hover {
-            background-color: #fb5b7f;
-        }
+
+      
         .carousel {
             position: relative;
         }
@@ -65,13 +93,54 @@
         .text-center {
             margin-top: 6%;
         }
+
+        .header-custom {
+            background-color: #223d50;
+            background-size: cover;
+            color: white;
+            padding: 0.5rem 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .header-custom a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+
+        .header-custom a:hover {
+            color: #ffd700;
+        }
+
+        .navbar-custom {
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .nav-link {
+            padding: 0.25rem 0.5rem;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <header class="header-custom">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
         <div class="container d-flex justify-content-between align-items-center">
             <a class="navbar-brand" href="#">
-                <img src="img/graduation-cap.png" alt="Logo" width="40" height="40">
+                <img src="img/graduation-cap.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -94,33 +163,34 @@
                         <a class="nav-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cources</a>
+                        <a class="nav-link" href="#">Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                 </ul>
+               <a href="login.html" class="btn btn-warning" target="_blank" rel="">login</a>
             </div>
         </div>
     </nav>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-slide="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="img/download.jpg" class="rounded mx-auto d-block custom-widht" alt="">
+                <img src="img/1" class="rounded mx-auto d-block custom-width" alt="">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Lorem ipsum dolor sit amet.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, modi?</p>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="img/1355025.jpeg" class="rounded mx-auto d-block custom-widht" alt="">
+                <img src="img/2.jpg" class="rounded mx-auto d-block custom-width" alt="">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Lorem ipsum dolor sit amet.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odio?</p>
                 </div>
-                </div>
+            </div>
             <div class="carousel-item">
-                <img src="img/15155.jpg" class="rounded mx-auto d-block custom-widht" alt="">
+                <img src="img/3.jpg" class="rounded mx-auto d-block custom-width" alt="">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Lorem ipsum dolor sit amet.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odio?</p>
@@ -129,51 +199,49 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hiden"></span>
+            <span class="visually-hidden"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hiden"></span>
+            <span class="visually-hidden"></span>
         </button>
-        </div>
-        <div class="overlay-buttons">
-            <button class="btn btn-custom">
-                <img src="img/Reshape.png" alt="Graphic Design">
-                Graphic Design
-            </button>
-            <button class="btn btn-custom">
-                <img src="img/rocket.png" alt="Marketing Online">
-                Marketing
-            </button>
-            <button class="btn btn-custom">
-                <img src="img/internet-of-things.png" alt="Website Design">
-                Website Design
-            </button>
-            <button class="btn btn-custom">
-                <img src="img/material.png" alt="Animation">
-                Animation
-            </button>
-            <button class="btn btn-custom">
-                <img src="img/App.png" alt="App Programming">
-                Programming
-            </button>
-        </div>
     </div>
-    
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center">Layanan Kami</h2>
-                </div>
+    <div class="overlay-buttons-1">
+        <button class="btn btn-custom-1">
+            <img src="img/Reshape.png" alt="Graphic Design">
+            Graphic Design
+        </button>
+        <button class="btn btn-custom">
+            <img src="img/rocket.png" alt="Marketing Online">
+            Marketing
+        </button>
+        <button class="btn btn-custom-1">
+            <img src="img/internet-of-things.png" alt="Website Design">
+            Website Design
+        </button>
+        <button class="btn btn-custom">
+            <img src="img/material.png" alt="Animation">
+            Animation
+        </button> 
+        <button class="btn btn-custom-1">
+            <img src="img/App.png" alt="App Programming">
+            Programming
+        </button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Layanan Kami</h2>
             </div>
-            <div class="container">
-    <div class="image-grid">
-        <img src="img/01a1cfd7-55d2-43a7-a298-d49084d5ee6c.png" alt="Marketing Online">
-        <img src="img/4k-programming-3hcns7bt28muj7ih.jpg" alt="Website Design">
-        <img src="img/HD-wallpaper-programming-for-pc-code-programmer-thumbnail.jpg" alt="Another Image">
-    </div>
-</div>  
         </div>
+        <div class="container">
+            <div class="image-grid">
+                <img src="img/istockphoto-1481491469-612x612.jpg" alt="Marketing Online">
+                <img src="img/1" alt="Website Design">
+                <img src="img/19-1-binaracademy-com.jpg" alt="Another Image">
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
